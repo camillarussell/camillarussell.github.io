@@ -1,0 +1,217 @@
+
+/*GERAL*/
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+  }
+
+body{
+    font-family: 'Raleway', Arial, Helvetica, sans-serif;
+    margin: 0;
+}
+
+/*LAYOUT*/
+
+.container{
+    max-width:960px;
+    margin:0 auto;    
+}
+
+a{
+    text-decoration: none;
+}
+
+/*BOTÃO*/
+
+.btn{
+    text-transform: uppercase;    
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 3rem;
+}
+
+.btn-branco{
+    color: #5a595a;
+    background-color: white;
+    padding: 1rem 1.5rem;
+}
+
+.btn-roxo{
+    color:  #7E459B ;
+    border: 1px solid  #7E459B;
+    padding: 0.6rem 1.5rem;
+}
+
+
+/*HEADER BANNER*/
+
+.banner{
+    background: url(../img/cr-bg.JPG) no-repeat ; 
+    background-size: cover;
+    background-position: center;
+    height: 95vh;
+    color: #ffffff;
+    text-align: center;
+    padding-top: 16.5rem;
+} 
+
+.banner-titulo{
+    font-size: 3rem;
+}
+
+.banner-subtitulo{
+    font-size: 1.7rem;
+    margin-bottom: 2.2rem;
+}
+
+/*SOBRE*/
+
+.sobre-flex{
+    display: flex;
+    margin-top: 1.5rem;
+    line-height:1.5rem;    
+}
+
+.sobre-titulo{
+    font-size: 2rem;
+    color: #c4c4c4;
+    margin-top: 3rem;
+    margin-bottom: 3rem;    
+}
+
+.sobre-descricao{
+    width: 50%;
+    padding-right: 10%;           
+}
+.sobre-habilidades{
+    width: 40%;   
+}
+
+.sobre-descricao__destaque, .sobre-habilidades__titulo{ 
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+    line-height: 28px;        
+}
+
+.sobre-descricao__destaque strong, .sobre-habilidades__titulo{
+    color: #7E459B;    
+}
+
+.sobre-descricao__texto{
+    margin-bottom: 2rem;
+    text-align: justify;
+}
+
+.sobre-habilidades__lista{
+    padding-left: 1rem;
+    line-height: 1.7rem;
+    margin-bottom: 1.5rem;
+}
+
+/*REDES SOCIAIS*/
+
+.footer{
+    text-align: center;   
+}
+
+.redes-sociais{
+    display: flex;   
+    justify-content: space-around; 
+}
+
+.redes-sociais__link{
+    max-width:  223px;
+    min-width:  223px;
+    background: #7E459B;
+    padding: 2rem 0rem;
+    color: white;
+    margin-top: 3rem;    
+    border-radius: 50%;
+}
+
+.redes-sociais__img{
+    margin-bottom: 1rem;
+}
+
+.redes-sociais__titulo{
+    margin-bottom: 1rem;
+    font-size: 1.7rem;
+}
+
+.footer-copyright{
+    color: #C4C4C4;
+    font-weight: lighter;
+    padding: 2rem 0;
+    margin: 1rem 0;
+}
+
+/* MEDIA QUERIES */
+/* TABLET PAISAGEM */
+@media (max-width:1024px){
+    .container{
+        max-width: 960px;
+        padding: 0 5rem;
+    }
+    .banner{
+        padding-top:15rem;
+    }
+}
+
+/* TABLET PAISAGEM / CELULAR */
+@media(max-width:768px){
+    .container{
+        max-width: 960px;
+        padding: 0 5rem;
+    }
+    
+    .banner{
+        padding-top:10rem;
+    }
+    .sobre-flex{
+        display: block;
+    }
+    
+    .sobre-descricao, .sobre-habilidades{
+        width:100%;
+        padding: 0;
+    }
+
+    .sobre-descricao__texto{
+        margin-bottom: 2rem;
+    }
+    
+    .sobre-habilidades__titulo{
+        margin-top:2rem;
+    }
+
+    .redes-sociais{
+        flex-wrap: wrap;
+    }
+
+    .redes-sociais__link{
+        width: 100%;   
+    }
+}
+
+@media (max-width: 500px){
+    .container {
+        padding: 0 1.5rem;
+    }
+    .banner{
+        padding-top:10rem;
+    }
+
+    .banner-titulo{
+        font-size:2.5rem;
+    }
+    
+    .banner-subtitulo{
+        font-size:1.5rem;
+        margin-bottom:2.5rem;    
+    }
+}
